@@ -1,0 +1,65 @@
+.main-container {
+  .left-nav-container {
+    width: 240px;
+    height: 100%;
+    padding: 15px 25px;
+    .top {
+      .logo {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 100px;
+      }
+      .page-title {
+        img {
+          width: 32px;
+          margin-right: 10px;
+        }
+        .title {
+          font-size: 20px;
+          line-height: 1.5;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+  .right-record-container {
+    width: calc(100% - 240px);
+    .record-list {
+      .record-item {
+        width: 350px;
+        .box {
+          .text {
+            height: 240px;
+            padding: 20px 25px;
+            .title {
+              font-size: 22px;
+              line-height: 1.5;
+            }
+            .desc {
+              font-size: 18px;
+              line-height: 1.7;
+            }
+            .time {
+              font-size: 17px;
+              line-height: 1.8;
+              margin-bottom: 20px;
+            }
+            .more {
+              width: 60px;
+              height: 60px;
+            }
+          }
+        }
+        &:hover,
+        &.on {
+          .box {
+            .img {
+              height: calc(100% - 240px);
+            }
+           
+          }
+        }
+      }
+    }
+  }
+}

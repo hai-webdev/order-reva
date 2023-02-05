@@ -1,0 +1,132 @@
+body {
+  padding-top: 84px;
+}
+.pc-header {
+  height: 84px;
+  background-color: #181e2a;
+  padding: 9px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .logo {
+      height: 42px;
+      a {
+        display: block;
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
+    .nav-list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      height: 66px;
+      line-height: 66px;
+      .nav-item {
+        height: 100%;
+        font-size: 19px;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0 29px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          opacity: 0;
+          left: 0;
+          height: 2px;
+          background-color: #717274;
+          transition: 0.6s;
+        }
+        &.on,
+        &:hover {
+          color: #fff;
+          &::after {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.m-header {
+  display: none;
+  height: 68px;
+  background-color: #181e2a;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 0 20px;
+  .nav-container {
+    display: none;
+    position: absolute;
+    padding: 30px 0;
+    left: 0;
+    width: 100%;
+    top: 68px;
+    background-color: #181e2a;
+    .nav-list{
+      .nav-item{
+        display: block;
+        text-align: center;
+        line-height: 2;
+        padding: 10px 0;
+        color:#fff;
+      }
+    }
+  }
+  .logo {
+    height: 36px;
+    display: block;
+    img {
+      height: 100%;
+    }
+  }
+  .menu-btn {
+    span {
+      display: block;
+      background-color: #fff;
+      width: 32px;
+      height: 3px;
+      margin-bottom: 4px;
+      transition: .6s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &.on{
+      span{
+        &:first-child{
+          transform: translateY(7px) rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:last-child{
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+@import "./1080.less" screen and (max-width: 1080px);
+@import "./768.less" screen and (max-width: 768px);

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner-container">
+      <div class="banner-swiper swiper-container">
+        <ul class="banner-list swiper-wrapper">
+          <li class="banner-item swiper-slide">
+            <img src="/public/images/home/banner1.jpg" alt="">
+          </li>
+          <li class="banner-item swiper-slide">
+            <img src="/public/images/home/banner1.jpg" alt="">
+          </li>
+          <li class="banner-item swiper-slide">
+            <img src="/public/images/home/banner1.jpg" alt="">
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="info-container" style="background-image: url(/public/images/home/bg-info.jpg);">
+      <div class="info-wrapper">
+        <div class="title wow fadeInUpBig">高端NFT艺术品收藏首选</div>
+        <div class="subtitle wow fadeInUpBig">First choice for high-endNFT art collection</div>
+        <div class="cont wow fadeInUpBig">
+          <p>
+            Reva的成立有一个非常简单的使命——甄别高端NFT的价值并为世人所知。
+          </p>
+          <p>
+            Reva与顶级艺术家和品牌合作，创建限量版、高质量 NFT 的集合，在我们的平台上独家提供。我们与世界著名艺术家人合作。
+          </p>
+          <p>
+            Reva被公认为世界领先的NFT服务，以出色的客户服务和创纪录的价格享有令人羡慕的声誉。
+          </p>
+          <p>
+            我们只做高端NFT的甄选和专业拍卖，专业的专家团队负责在全世界范围甄选高端NFT。
+          </p>
+        </div>
+        <a href="" class="more wow fadeInUpBig">
+          <span>查看详情</span>
+        </a>
+      </div>
+    </section>
+    <section class="auction-container" style="background-image: url(/public/images/home/bg-auction.jpg);">
+      <div class="title-module">
+        <div class="title wow fadeInUp">拍卖成交记录</div>
+        <div class="entitle wow fadeInUp"  data-wow-delay="100ms">Auction record</div>
+      </div>
+      <ul class="auction-list max-center">
+        <li class="auction-item wow fadeInUpBig">
+          <a href="">
+            <div class="img">
+              <img src="/public/images/home/auction-1.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Ringers#879</p>
+              <p>最终价格：$5,621,349.24</p>
+              <p>拍卖时间：2021年8月27日</p>
+            </div>
+          </a>
+        </li>
+        <li class="auction-item wow fadeInUpBig" data-wow-delay="100ms">
+          <a href="">
+            <div class="img">
+              <img src="/public/images/home/auction-2.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Ringers#879</p>
+              <p>最终价格：$5,621,349.24</p>
+              <p>拍卖时间：2021年8月27日</p>
+            </div>
+          </a>
+        </li>
+        <li class="auction-item wow fadeInUpBig" data-wow-delay="200ms">
+          <a href="">
+            <div class="img">
+              <img src="/public/images/home/auction-3.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Ringers#879</p>
+              <p>最终价格：$5,621,349.24</p>
+              <p>拍卖时间：2021年8月27日</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="adv-container" style="background-image: url(/public/images/home/bg-adv.jpg);">
+      <div class="text max-center">
+        <div class="title wow fadeInUpBig">英国大公拍卖会线下NFT专场</div>
+        <div class="time wow fadeInUpBig" data-wow-delay="100ms">
+          拍卖日期<span>2020</span>年<span>12</span>月<span>12</span>日<span>13:00-18:00</span>
+        </div>
+      </div>
+    </section>
+    <section class="offline-container" style="background-image: url(/public/images/home/bg-offline.jpg);">
+      <div class="title-module">
+        <div class="title-center max-center">
+          <div class="left-title wow fadeInLeft">
+            <div class="title">
+              线下拍卖会
+            </div>
+            <div class="entitle">Offline auction</div>
+          </div>
+          <div class="right-category wow fadeInRight">
+            <a href="" class="on">全部</a>
+            <a href="">绘画典藏</a>
+            <a href="">抽象巅峰</a>
+            <a href="">精致生活</a>
+            <a href="" class="more"><span>MORE</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="offline-wrapper max-center">
+        <div class="offline-swiper swiper-container">
+          <ul class="offline-list swiper-wrapper">
+            <li class="offline-item swiper-slide wow fadeInUpBig">
+              <a href="">
+                <div class="img">
+                  <img src="/public/images/home/offline-1.jpg" alt="">
+                </div>
+                <div class="text">
+                  <p class="price">最终价格:858,408.09美元</p>
+                  <p class="en">Red October#99730</p>
+                </div>
+              </a>
+            </li>
+            <li class="offline-item swiper-slide wow fadeInUpBig" data-wow-delay="100ms">
+              <a href="">
+                <div class="img">
+                  <img src="/public/images/home/offline-2.jpg" alt="">
+                </div>
+                <div class="text">
+                  <p class="price">最终价格:858,408.09美元</p>
+                  <p class="en">Red October#99730</p>
+                </div>
+              </a>
+            </li>
+            <li class="offline-item swiper-slide wow fadeInUpBig" data-wow-delay="200ms">
+              <a href="">
+                <div class="img">
+                  <img src="/public/images/home/offline-3.jpg" alt="">
+                </div>
+                <div class="text">
+                  <p class="price">最终价格:858,408.09美元</p>
+                  <p class="en">Red October#99730</p>
+                </div>
+              </a>
+            </li>
+            <li class="offline-item swiper-slide wow fadeInUpBig" data-wow-delay="300ms">
+              <a href="">
+                <div class="img">
+                  <img src="/public/images/home/offline-1.jpg" alt="">
+                </div>
+                <div class="text">
+                  <p class="price">最终价格:858,408.09美元</p>
+                  <p class="en">Red October#99730</p>
+                </div>
+              </a>
+            </li>
+            <li class="offline-item swiper-slide wow fadeInUpBig" data-wow-delay="400ms">
+              <a href="">
+                <div class="img">
+                  <img src="/public/images/home/offline-2.jpg" alt="">
+                </div>
+                <div class="text">
+                  <p class="price">最终价格:858,408.09美元</p>
+                  <p class="en">Red October#99730</p>
+                </div>
+              </a>
+            </li>
+            <li class="offline-item swiper-slide wow fadeInUpBig" data-wow-delay="500ms">
+              <a href="">
+                <div class="img">
+                  <img src="/public/images/home/offline-3.jpg" alt="">
+                </div>
+                <div class="text">
+                  <p class="price">最终价格:858,408.09美元</p>
+                  <p class="en">Red October#99730</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>
